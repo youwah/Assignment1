@@ -1,0 +1,26 @@
+//subclass
+
+public class Uum extends University{
+   String location = "UUM is at outskirts and";
+   String rightOfOwnership = " UUM is a public university.";
+   String student = " UUM have local and international student.";
+   
+
+   public static void invention(){
+      System.out.println("5.Do invention and innovation");
+
+   }
+   
+   public static void program(){
+      System.out.println("6.Provide education and professional program");
+   }
+   public static void activities(){
+      System.out.println("7.Provide Extracurricular activities");
+   }
+   //overriding
+   public static void facilities(){
+      System.out.println("8.Provide facilitieas:More on sport facilities");
+   }
+
+
+}
