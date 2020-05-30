@@ -1,0 +1,83 @@
+//mainclass
+
+public class Mainn{
+   public static void main(String[]args){
+   University un= new University();
+   //public university
+   Uum u = new Uum();
+    //Encapsulation
+   u.setName("University Utara Malaysia"); // Set the value of the name variable to "University Utara Malaysia"
+   System.out.println(u.getName());
+   //overloading
+   System.out.println("From: " + u.sum(990, 994)); 
+   System.out.println("Now: " + u.sum(1010, 1008, 2));
+   
+   System.out.print(u.location);
+   System.out.print(u.rightOfOwnership);
+   System.out.print(u.student);
+   System.out.println("");
+   System.out.println("As usual UUM provide:");
+   u.teaching();
+   u.research();
+   un.facilities();
+   u.scholarship();
+   System.out.println("");
+   System.out.println("As particular UUM provide:");
+   u.invention();
+   u.program();
+   u.activities();
+   u.facilities();
+    System.out.println("---------------------------------------------------------------------------------------------------------");
+  
+   //non-profit private university
+   Utar t = new Utar();
+    //Encapsulation
+   t.setName("Universiti Tunku Abdul Rahman"); // Set the value of the name variable to "Universiti Tunku Abdul Rahman"
+   System.out.println(t.getName());
+   //overloading
+   System.out.println("From: " + t.sum(1000, 1002)); 
+   System.out.println("Now: " + t.sum(1008, 2, 1010));
+   
+   System.out.print(t.location);
+   System.out.print(t.rightOfOwnership);
+   System.out.print(t.student);
+   System.out.println("");
+   System.out.println("As usual UTAR provide:");
+   t.teaching();
+   t.research();
+   un.facilities();
+   t.scholarship();
+   System.out.println("");
+   System.out.println("As particular UTAR provide:");
+   t.program();
+   t.foudation();
+   t.courseA();
+   t.facilities();
+   System.out.println("---------------------------------------------------------------------------------------------------------");
+   
+   //private university
+   SunwayU s = new SunwayU();
+   //Encapsulation
+   s.setName("Sunway University"); // Set the value of the name variable to "Sunway University"
+   System.out.println(s.getName());
+   //overloading
+   System.out.println("From: " + s.sum(1000, 1004)); 
+   System.out.println("Now: " + s.sum(2, 1008, 1010));
+   
+  System.out.print(s.location);
+   System.out.print(s.rightOfOwnership);
+   System.out.print(s.student);
+   System.out.println("");
+   System.out.println("As usual Sunway University provide:");
+   s.teaching();
+   s.research();
+   un.facilities();
+   s.scholarship();
+   System.out.println("");
+   System.out.println("As particular Sunway University provide:");
+   s.aLevel();
+   s.internJob();
+   s.facilities();
+   
+  }
+}
