@@ -1,0 +1,21 @@
+//subclass
+
+public class SunwayU extends University{
+   String location = "Sunway University at city and";
+   String rightOfOwnership = " Sunway University is a private university.";
+   String student = "Sunway University have local and international students.";
+  
+   public static void aLevel(){
+      System.out.println("5.Provide foundation and Alevel course to student");
+   }
+    public static void internJob(){
+      System.out.println("6.Provide several intern job to student");
+   }
+   //overriding
+   public static void facilities(){
+      System.out.println("7.Provide facilitieas:More on meal facilities");
+   }
+
+   
+
+}
