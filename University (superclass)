@@ -1,0 +1,44 @@
+//Super class
+public class University{
+
+   //Encapsulation
+   private String name;
+   //Encapsulation
+   public String getName() {
+    return name; 
+   }
+   
+    public void setName(String newName) {
+      name = newName;
+   }
+   //overloading
+   static int sum(int x, int y) {
+   return x + y;
+   }
+
+   static int sum(int x, int y, int z) {
+   return x + y + z;
+   }
+   
+   
+  //function 
+   public static void teaching(){
+      System.out.println("1.Teaching at high level");
+   }
+   
+   public static void research(){
+      System.out.println("2.Conducting research");
+   }
+   //overriding
+   public static void facilities(){
+      System.out.println("3.Provide facilitieas");
+   }
+   
+   public static void scholarship(){
+      System.out.println("4.Provide scholarship");
+   }
+
+
+}
+
+
