@@ -1,0 +1,24 @@
+//subclass
+
+public class Utar extends University{
+   String location = "UTAR university at city and";
+   String rightOfOwnership = " UTAR is a non-profit private university.";
+   String student = "UTAR only have local student.";
+   
+   public static void foudation(){
+      System.out.println("5.Provide foundation course to student");
+   }
+    public static void program(){
+      System.out.println("6.Provide professional program only");
+   }
+   public static void courseA(){
+      System.out.println("7.Provide Architecture course to student");
+   }
+   //overriding
+   public static void facilities(){
+      System.out.println("8.Provide facilitieas:more on transport facilities");
+   }
+
+
+
+}
