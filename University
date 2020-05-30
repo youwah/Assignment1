@@ -1,0 +1,200 @@
+//Super class
+public class University{
+
+   //Encapsulation
+   private String name;
+   //Encapsulation
+   public String getName() {
+    return name; 
+   }
+   
+    public void setName(String newName) {
+      name = newName;
+   }
+   //overloading
+   static int sum(int x, int y) {
+   return x + y;
+   }
+
+   static int sum(int x, int y, int z) {
+   return x + y + z;
+   }
+   
+   
+  //function 
+   public static void teaching(){
+      System.out.println("1.Teaching at high level");
+   }
+   
+   public static void research(){
+      System.out.println("2.Conducting research");
+   }
+   //overriding
+   public static void facilities(){
+      System.out.println("3.Provide facilitieas");
+   }
+   
+   public static void scholarship(){
+      System.out.println("4.Provide scholarship");
+   }
+
+
+}
+
+//subclass
+
+public class Uum extends University{
+   String location = "UUM is at outskirts and";
+   String rightOfOwnership = " UUM is a public university.";
+   String student = " UUM have local and international student.";
+   
+
+   public static void invention(){
+      System.out.println("5.Do invention and innovation");
+
+   }
+   
+   public static void program(){
+      System.out.println("6.Provide education and professional program");
+   }
+   public static void activities(){
+      System.out.println("7.Provide Extracurricular activities");
+   }
+   //overriding
+   public static void facilities(){
+      System.out.println("8.Provide facilitieas:More on sport facilities");
+   }
+
+
+}
+
+//subclass
+
+public class Utar extends University{
+   String location = "UTAR university at city and";
+   String rightOfOwnership = " UTAR is a non-profit private university.";
+   String student = "UTAR only have local student.";
+   
+   public static void foudation(){
+      System.out.println("5.Provide foundation course to student");
+   }
+    public static void program(){
+      System.out.println("6.Provide professional program only");
+   }
+   public static void courseA(){
+      System.out.println("7.Provide Architecture course to student");
+   }
+   //overriding
+   public static void facilities(){
+      System.out.println("8.Provide facilitieas:more on transport facilities");
+   }
+
+
+
+}
+
+//subclass
+
+public class SunwayU extends University{
+   String location = "Sunway University at city and";
+   String rightOfOwnership = " Sunway University is a private university.";
+   String student = "Sunway University have local and international students.";
+  
+   public static void aLevel(){
+      System.out.println("5.Provide foundation and Alevel course to student");
+   }
+    public static void internJob(){
+      System.out.println("6.Provide several intern job to student");
+   }
+   //overriding
+   public static void facilities(){
+      System.out.println("7.Provide facilitieas:More on meal facilities");
+   }
+
+   
+
+}
+
+//mainclass
+
+public class Mainn{
+   public static void main(String[]args){
+   University un= new University();
+   //public university
+   Uum u = new Uum();
+    //Encapsulation
+   u.setName("University Utara Malaysia"); // Set the value of the name variable to "University Utara Malaysia"
+   System.out.println(u.getName());
+   //overloading
+   System.out.println("From: " + u.sum(990, 994)); 
+   System.out.println("Now: " + u.sum(1010, 1008, 2));
+   
+   System.out.print(u.location);
+   System.out.print(u.rightOfOwnership);
+   System.out.print(u.student);
+   System.out.println("");
+   System.out.println("As usual UUM provide:");
+   u.teaching();
+   u.research();
+   un.facilities();
+   u.scholarship();
+   System.out.println("");
+   System.out.println("As particular UUM provide:");
+   u.invention();
+   u.program();
+   u.activities();
+   u.facilities();
+    System.out.println("---------------------------------------------------------------------------------------------------------");
+  
+   //non-profit private university
+   Utar t = new Utar();
+    //Encapsulation
+   t.setName("Universiti Tunku Abdul Rahman"); // Set the value of the name variable to "Universiti Tunku Abdul Rahman"
+   System.out.println(t.getName());
+   //overloading
+   System.out.println("From: " + t.sum(1000, 1002)); 
+   System.out.println("Now: " + t.sum(1008, 2, 1010));
+   
+   System.out.print(t.location);
+   System.out.print(t.rightOfOwnership);
+   System.out.print(t.student);
+   System.out.println("");
+   System.out.println("As usual UTAR provide:");
+   t.teaching();
+   t.research();
+   un.facilities();
+   t.scholarship();
+   System.out.println("");
+   System.out.println("As particular UTAR provide:");
+   t.program();
+   t.foudation();
+   t.courseA();
+   t.facilities();
+   System.out.println("---------------------------------------------------------------------------------------------------------");
+   
+   //private university
+   SunwayU s = new SunwayU();
+   //Encapsulation
+   s.setName("Sunway University"); // Set the value of the name variable to "Sunway University"
+   System.out.println(s.getName());
+   //overloading
+   System.out.println("From: " + s.sum(1000, 1004)); 
+   System.out.println("Now: " + s.sum(2, 1008, 1010));
+   
+  System.out.print(s.location);
+   System.out.print(s.rightOfOwnership);
+   System.out.print(s.student);
+   System.out.println("");
+   System.out.println("As usual Sunway University provide:");
+   s.teaching();
+   s.research();
+   un.facilities();
+   s.scholarship();
+   System.out.println("");
+   System.out.println("As particular Sunway University provide:");
+   s.aLevel();
+   s.internJob();
+   s.facilities();
+   
+  }
+}
